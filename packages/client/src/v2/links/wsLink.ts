@@ -46,7 +46,7 @@ function newWsManager(opts: WsLinkOpts) {
     })
 
     ws.addEventListener('close', _ => {
-      reconnectWs()
+      reconnectWs(2)
     })
   }
 
